@@ -1,4 +1,4 @@
-from tests.fake_storage import FakeSecretsStore
+from mfy_data_core_fakes.adapters.fake_storage import FakeSecretsStore
 
 
 def test_secrets_store():

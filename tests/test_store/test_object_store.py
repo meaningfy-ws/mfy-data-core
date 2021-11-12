@@ -1,5 +1,5 @@
-from sem_covid.adapters.minio_object_store import MinioObjectStore
-from tests.fake_storage import FakeObjectStore, FakeMinioClient
+from mfy_data_core.adapters.minio_object_store import MinioObjectStore
+from mfy_data_core_fakes.adapters.fake_storage import FakeObjectStore, FakeMinioClient
 
 
 def test_fake_object_store():

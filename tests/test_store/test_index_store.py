@@ -1,7 +1,7 @@
 import pandas as pd
 
-from sem_covid.adapters.es_index_store import ESIndexStore
-from tests.fake_storage import FakeIndexStore, FakeEsPandasClient, FakeObjectStore
+from mfy_data_core.adapters.es_index_store import ESIndexStore
+from mfy_data_core_fakes.adapters.fake_storage import FakeIndexStore, FakeEsPandasClient, FakeObjectStore
 
 
 def test_fake_index_store():

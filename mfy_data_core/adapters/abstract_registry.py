@@ -1,4 +1,8 @@
+#!/usr/bin/python3
 
+# abstract_store.py
+# Date:  12/11/2021
+# Author: Stratulat Ștefan
 
 from abc import ABC, abstractmethod
 

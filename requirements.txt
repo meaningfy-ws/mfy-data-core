@@ -1,0 +1,7 @@
+hvac
+pandas
+es-pandas
+minio
+py-singleton
+SPARQLWrapper
+python-dotenv

@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-REQUIREMENTS_FILE_NAME = 'requirements.txt'
+REQUIREMENTS_FILE_NAME = 'requirements/requirements-lock.txt'
 
 install_requirements = []
 

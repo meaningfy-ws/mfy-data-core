@@ -10,7 +10,6 @@ from pathlib import Path
 from typing import Optional
 
 from SPARQLWrapper import SPARQLWrapper, CSV
-from py_singleton import singleton
 
 import pandas as pd
 
@@ -24,7 +23,6 @@ class SubstitutionTemplate(Template):
     delimiter = '~'
 
 
-@singleton
 class SPARQLClientPool(object):
     """
         A singleton connection pool, that hosts a dictionary of endpoint_urls and
@@ -39,9 +37,6 @@ class SPARQLClientPool(object):
             SPARQLClientPool.connection_pool[endpoint_url] = SPARQLWrapper(endpoint_url)
         return SPARQLClientPool.connection_pool[endpoint_url]
 
-
-# safe instantiation
-SPARQLClientPool.instance()
 
 
 class SPARQLTripleStore(TripleStoreABC):

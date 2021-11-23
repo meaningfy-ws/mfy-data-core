@@ -10,7 +10,7 @@ from mfy_data_core.adapters.abstract_store import SecretsStoreABC
 
 
 class VaultSecretsStore(SecretsStoreABC):
-
+# TODO: Write the documentation for this class
     default_vault_addr : str = os.environ.get('VAULT_ADDR')
     default_vault_token : str = os.environ.get('VAULT_TOKEN')
     default_secret_mount : str = None
@@ -45,7 +45,7 @@ class VaultSecretsStore(SecretsStoreABC):
         """
         
         secrets_dict = {}
-        for path in self.secret_paths:
+        for path in self._secret_paths:
             secrets_dict.update(self.get_secrets(path))
         if secret_key in secrets_dict.keys():
             return secrets_dict[secret_key]
